@@ -1,0 +1,399 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(253, 253, 255);
+    padding: 15px 20px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Logo */
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(6, 6, 6);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 span {
+    color: #0b3a8b;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+}
+
+/* Navigation links */
+li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+    padding: 8px 12px;
+    display: inline-block;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+li a:hover {
+    background-color: #0b3a8b;
+    color: white; /* Change text color on hover */
+    transform: translateY(-3px); /* Slight hover effect */
+}
+/* Button Section */
+.btns{
+    display: flex;
+    justify-content: flex-end; /* Align login button to the right */
+}
+.log{
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+.login-btn {
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #144292;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #114dcf;
+    transform: translateY(-3px);
+}
+
+/* Main content */
+.main-content {
+    background-color: #f9f9f9;
+    height: 600px;
+    width: 100%;
+}
+
+.content-background {
+    background-image: url(image/b.jpg);
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    object-fit: cover;
+}
+
+.topic {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+}
+
+.l1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.l2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.l3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Search bar */
+.search-menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 5px;
+    background: white;
+    border-radius: 30px;
+    padding: 4px;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-menu input {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-menu button {
+    background-color: #0b2f6c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.search-menu button:hover {
+    background-color: #114dcf;
+}
+
+/* Top Brands Section */
+.top-brands {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+    
+}
+
+.top-brands h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0b2f6c;
+    margin-bottom: 20px;
+}
+
+/* Brands Grid */
+.brand-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 25px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Brand Box */
+.brand-box {
+    background: #f4f4f4;
+    border-radius: 15px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2.5px solid #f4f4f4;
+}
+
+.brand-box img {
+    width: 90px;
+    height: auto;
+    object-fit: cover;
+}
+
+.brand-box:hover {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transform: scale(1.1);
+    transition: 0.3s;
+    border-color: #e5e6e8;
+}
+
+/* Services Section */
+.services {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.services h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #0b2f6c;
+}
+
+.services p {
+    font-size: 20px;
+    color: #6b6b6b;
+    margin-bottom: 30px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.service-box {
+    background: white;
+    border: 2.5px solid #dfe5f1;
+    border-radius: 15px;
+    padding: 30px;
+    width: 180px;
+    height: 180px;
+}
+
+.service-box img {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.service-box p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0b2f6c;
+}
+
+.service-box:hover {
+    border-color: #0b2f6c;
+    transition: 0.5s;
+}
+/* Top Deals Section */
+.top-deals {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.top-deals h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #0b2f6c;
+    margin-bottom: 20px;
+}
+
+.deals-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.deal-box {
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.deal-box img {
+    width: 95%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.deal-box h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 16px;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+.buy-btn, .learn-btn {
+    background-color: #f22525;
+    color: white;
+    border: none;
+    padding: 9px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.buy-btn:hover {
+    background-color: #c11717;
+}
+
+.learn-btn {
+    background-color: #144292;
+}
+
+.learn-btn:hover {
+    background-color: #0b2f6c;
+}
+
+/* Success Story */
+.success-story {
+    /* text-align: center; */
+    padding: 40px 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #0b2f6c;
+    margin: 15px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.stat-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stat-box h4 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #f8981d;
+}
+
+.stat-box hr {
+    width: 50px;
+    height: 2px;
+    background: #f8981d;
+    border: none;
+    margin: 10px auto;
+}
+
+.stat-box p {
+    font-size: 14px;
+    color: #0b2f6c;
+    font-weight: bold;
+}
+
