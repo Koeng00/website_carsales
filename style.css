@@ -338,9 +338,10 @@ li a:hover {
 
 /* Success Story */
 .success-story {
-    /* text-align: center; */
+    text-align: center;
     padding: 40px 0;
     background-color: #f8f9fa;
+   
 }
 
 .container {
